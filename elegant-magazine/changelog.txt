@@ -1,3 +1,10 @@
+### 4.1.0 - Nov 19 2024
+* New - WP 6.7 Compatibility
+* Update - Dashboard improvements
+* Update - Scripts improvements
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 4.0.0 - Oct 25 2024
 * New - Import Starter Site Dashboard
 * New - Import Gutenberg Patterns Dashboard
