@@ -162,8 +162,8 @@ if (!class_exists('AF_themes_info')) {
         'elegant-magazine', // Parent slug.
         __('Upgrade', 'elegant-magazine'), // Page title.
         '<span id="aft-upgrade-menu-item">' . __('Upgrade', 'elegant-magazine') .'</span>', // Menu title.
-        capability: 'manage_options', // Capability.
-        menu_slug: esc_url('https://afthemes.com/products/elegant-magazine-pro/') // Menu slug.
+        'manage_options', // Capability.
+        esc_url('https://afthemes.com/products/elegant-magazine-pro/') // Menu slug.
         
       );
     }
