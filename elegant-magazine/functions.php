@@ -293,10 +293,10 @@ if ( class_exists( 'WooCommerce' ) ) {
     require get_template_directory() . '/inc/woocommerce.php';
 }
 
-add_action( 'after_setup_theme', 'elegant_magazine_transltion_init');
+add_action( 'init', 'elegant_magazine_transltion_init');
 
 function elegant_magazine_transltion_init() {
-    load_theme_textdomain( 'elegant-magazine', false, get_template_directory()  . '/languages' );
+    load_theme_textdomain( 'elegant-magazine', get_template_directory()  . '/languages' );
 }
 
 
