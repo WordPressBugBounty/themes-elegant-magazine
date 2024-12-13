@@ -215,6 +215,15 @@ function elegant_magazine_scripts()
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
+
+    if (is_rtl() && is_child_theme()) {
+        wp_enqueue_style(
+          'elegant-magazine-rtl',
+          get_template_directory_uri() . '/rtl.css',
+          array() // Load after other styles
+    
+        );
+      }
 }
 
 add_action('wp_enqueue_scripts', 'elegant_magazine_scripts');
@@ -293,10 +302,10 @@ if ( class_exists( 'WooCommerce' ) ) {
     require get_template_directory() . '/inc/woocommerce.php';
 }
 
-add_action( 'init', 'elegant_magazine_transltion_init');
+add_action( 'after_setup_theme', 'elegant_magazine_transltion_init');
 
 function elegant_magazine_transltion_init() {
-    load_theme_textdomain( 'elegant-magazine', get_template_directory()  . '/languages' );
+    load_theme_textdomain( 'elegant-magazine', false, get_template_directory()  . '/languages' );
 }
 
 

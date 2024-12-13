@@ -51,7 +51,7 @@ if ( ! function_exists( 'elegant_magazine_post_thumbnail' ) ) :
 
             ?>
             <div class="post-thumbnail <?php echo esc_attr($archive_class); ?>">
-                <a href="<?php the_permalink(); ?>" aria-hidden="true">
+                <a href="<?php the_permalink(); ?>" aria-hidden="true" aria-label="<?php echo esc_attr(get_the_title($post->ID)); ?>">
                     <?php
                     the_post_thumbnail( $archive_image, array(
                         'alt' => the_title_attribute( array(

@@ -1,3 +1,17 @@
+### 4.2.0 - Dec 13 2024
+* New - Accessibilty improvement
+* New - Page builder support
+* New - Blank Canvas template
+* New - Full Width template
+* Update - WooCommerce compatibility improvement
+* Update - Elementor compatibility improvement
+* Update - Brizy compatibility improvement
+* Update - Beaver Builder compatibility improvement
+* Update - Visual Composer compatibility improvement
+* Update - SiteOrigin compatibility improvement
+* Update - Speed optimization
+* Update - Scripts improvements
+
 ### 4.1.0 - Nov 19 2024
 * New - WP 6.7 Compatibility
 * Update - Dashboard improvements

@@ -39,7 +39,7 @@ if (!function_exists('elegant_magazine_ticker_news')):
                                         if (has_post_thumbnail()) {
                                             $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'elegant-magazine-thumbnail-small');
                                             $url = $thumb['0']; ?>
-                                            <img src="<?php echo esc_url($url); ?>" alt="<?php the_title_attribute(); ?>">
+                                            <img src="<?php echo esc_url($url); ?>" alt="<?php echo esc_html(get_the_title()); ?>">
                                         <?php } ?>
 
                                         <?php the_title(); ?>

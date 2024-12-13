@@ -216,7 +216,14 @@ class Breadcrumb_Trail
                     $link_item = urldecode(get_permalink($post->ID)); // Decode URL to handle special characters.
                 } elseif (is_archive() && (!is_day() && !is_month() && !is_year() && !is_tag())) {
                     $category = get_queried_object();
-                    $link_item = urldecode(get_category_link($category->term_id));
+                    if (!empty($category) && isset($category->term_id)) {
+                        $link_item = urldecode(get_category_link($category->term_id));
+                    } elseif (!empty($category) && isset($category->rewrite['slug'])) {
+                        // For custom post type archives or other objects with rewrite rules.
+                        $link_item = urldecode(get_post_type_archive_link($category->name));
+                    } else {
+                        $link_item = urldecode(home_url()); // Default to home if no category or archive info.
+                    }
                 } elseif (is_day()) {
                     $link_item = urldecode(get_day_link(get_the_time('Y'), get_the_time('m'), get_the_time('d')));
                 } elseif (is_month()) {

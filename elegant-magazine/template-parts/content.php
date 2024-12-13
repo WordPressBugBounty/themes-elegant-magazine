@@ -41,6 +41,7 @@
                 <?php //elegant_magazine_entry_footer(); ?>
             </footer>
 
+
     <?php else: ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <?php elegant_magazine_page_layout_blocks(); ?>
