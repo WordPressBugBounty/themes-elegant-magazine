@@ -4,7 +4,7 @@ Contributors: AF themes
 Requires at least: 4.0
 Requires PHP: 5.3
 Tested up to: 6.7
-Stable tag: 4.2.0
+Stable tag: 4.2.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, custom-header, translation-ready, theme-options, threaded-comments
@@ -38,6 +38,12 @@ An elegant and minimalist theme, which is predominantly designed for a web news 
 Elegant Magazine includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+= 4.2.1 - Dec 27 2024 =
+* Update - Accessibilty improvement
+* Update - Page builder support
+* Update - Speed optimization
+* Update - Scripts improvements
+
 = 4.2.0 - Dec 13 2024 =
 * New - Accessibilty improvement
 * New - Page builder support

@@ -1,3 +1,9 @@
+### 4.2.1 - Dec 27 2024
+* Update - Accessibilty improvement
+* Update - Page builder support
+* Update - Speed optimization
+* Update - Scripts improvements
+
 ### 4.2.0 - Dec 13 2024
 * New - Accessibilty improvement
 * New - Page builder support
