@@ -4,7 +4,7 @@ Theme URI: https://www.afthemes.com/products/elegant-magazine/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: An elegant and minimalist theme, which is predominantly designed for a web news portal and magazine with an immense research on contemporary online newspapers. With the help of available customizer options and widgets, you can implement layout as a trending news journals, modern fashion magazine, travel blogging & magazine, clean and minimal news sites, blogging site and even more. The theme is SEO friendly with optimized code and awesome support. See our demos: https://afthemes.com/elegant-magazine-demos/ and support at : https://afthemes.com/supports/
-Version: 4.2.1
+Version: 4.2.2
 Requires at least: 4.0
 Requires PHP: 5.3
 Tested up to: 6.7
@@ -268,12 +268,14 @@ fieldset {
     border: 1px solid #c0c0c0;
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
+    margin-bottom: 20px;
 }
 
 legend {
     border: 0;
     padding: 0 10px;
     width: unset;
+    color: inherit;
 }
 
 textarea {
@@ -1556,9 +1558,20 @@ header.entry-header h1.entry-title {
 .site-content .widget_meta li a,
 .site-content .widget_categories li,
 .site-content .widget_nav_menu li a,
-.site-content .widget_recent_entries li a {
-    color: #757575;
+.site-content .widget_recent_entries li a{
     border-color: #e5e5e5;
+}
+
+.site-content .widget_recent_comments li a:not(:hover),
+.site-content .widget_pages li a:not(:hover),
+.site-content .widget_archive li a:not(:hover),
+.site-content .widget_meta li a:not(:hover),
+.site-content .widget_nav_menu li a:not(:hover),
+.site-content .widget_recent_entries li a:not(:hover),
+.site-content .widget_categories li a:not(:hover),
+.elegant-widget .wp-block-group ol li a:not(:hover),
+.elegant-widget .wp-block-group ul li a:not(:hover){
+    color: inherit;
 }
 
 .widget_pages li:last-child a,
@@ -3351,7 +3364,6 @@ section.af-blocks.af-main-banner .container .row.no-gutter {
 }
 
 .comment-form label {
-    color: #707070;
     display: block;
     text-transform: uppercase;
 }
@@ -3425,7 +3437,7 @@ p.comment-form-cookies-consent label {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    opacity: 1 !important;
+    opacity: 1;
 
 }
 
@@ -3433,6 +3445,7 @@ p.comment-form-cookies-consent label {
 #scroll-up:focus {
     background-color: #373737;
     border-color: #373737;
+    color: #fff;
 }
 
 #scroll-up:before {
@@ -3446,12 +3459,6 @@ p.comment-form-cookies-consent label {
 
 #scroll-up i {
     display: none;
-}
-
-#scroll-up:hover i,
-#scroll-up:focus i {
-    color: #fff;
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -4260,6 +4267,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"],
     letter-spacing: 1px;
     font-weight: 400;
     text-transform: uppercase;
+}
+.em-breadcrumbs ul li a:not(:hover) {
+    color: inherit;
 }
 
 .em-breadcrumbs ul .trail-item span {
