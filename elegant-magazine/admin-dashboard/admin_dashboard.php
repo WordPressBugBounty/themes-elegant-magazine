@@ -43,8 +43,8 @@ if (!class_exists('AF_themes_info')) {
       $this->theme_name = $theme->get('Name');
       $this->theme_version = $theme->get('Version');
       $this->theme_slug    = $theme->get_template();
-      $this->menu_name     = isset($this->config['menu_name']) ? $this->config['menu_name'] : sprintf(esc_html__('%s', 'elegant-magazine'), $this->theme_name);
-      $this->page_name     = isset($this->config['page_name']) ? $this->config['page_name'] : sprintf(esc_html__('%s', 'elegant-magazine'), $this->theme_name);
+      $this->menu_name     = isset($this->config['menu_name']) ? $this->config['menu_name'] : $this->theme_name;
+      $this->page_name     = isset($this->config['page_name']) ? $this->config['page_name'] : $this->theme_name;
       $this->page_slug     = $this->theme_slug;
       add_action('admin_menu', array($this, 'elegant_magazine_register_info_page'));
       add_action('admin_enqueue_scripts', array($this, 'elegant_magazine_register_backend_scripts'));
