@@ -1,3 +1,8 @@
+### 4.3.0 - May 22 2025
+* Update - Security improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 4.2.2 - Mar 17 2025
 * Update - Accessibilty improvement
 * Update - Page builder support
