@@ -1,3 +1,7 @@
+### 4.3.2 - Jun 24 2025
+* Update - Default admin panel
+* Update - Recommneded plugins
+
 ### 4.3.0 - May 22 2025
 * Update - Security improvement
 * Update - Block Style improvement
