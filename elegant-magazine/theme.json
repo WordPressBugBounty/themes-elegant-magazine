@@ -12,8 +12,8 @@
             "full": true
         },
         "layout": {
-            "contentSize": "740px",
-            "wideSize": "1170px"
+            "contentSize": "775px",
+            "wideSize": "1140px"
         }
     },
     "styles": {
@@ -26,12 +26,22 @@
                         "marginRight": "auto"
                     }
                 }
+            },
+            "core/button": {
+                "border": {
+                    "radius": "0"
+                }
             }
         },
         "elements": {
             "link": {
                 "typography": {
                     "textDecoration": "none"
+                }
+            },
+            "button": {
+                "border": {
+                    "radius": "0"
                 }
             }
         }

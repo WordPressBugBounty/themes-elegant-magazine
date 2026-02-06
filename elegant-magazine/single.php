@@ -28,6 +28,7 @@ get_header(); ?>
                             endif;
                         endif;
 
+                        // the_post_navigation();
                         the_post_navigation( array(
                             'prev_text' => sprintf(
                                 /* translators: %s: Title of the previous post. */
@@ -44,6 +45,7 @@ get_header(); ?>
                             /* translators: Hidden heading for the post navigation section. */
                             'screen_reader_text' => esc_html__( 'Post navigation', 'elegant-magazine' ),
                         ) );
+                        
 
                         // If comments are open or we have at least one comment, load up the comment template.
                         if (comments_open() || get_comments_number()) :

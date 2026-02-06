@@ -4,10 +4,10 @@ Theme URI: https://www.afthemes.com/products/elegant-magazine/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: An elegant and minimalist theme, which is predominantly designed for a web news portal and magazine with an immense research on contemporary online newspapers. With the help of available customizer options and widgets, you can implement layout as a trending news journals, modern fashion magazine, travel blogging & magazine, clean and minimal news sites, blogging site and even more. The theme is SEO friendly with optimized code and awesome support. See our demos: https://afthemes.com/elegant-magazine-demos/ and support at : https://afthemes.com/supports/
-Version: 4.3.3
+Version: 4.3.8.1
 Requires at least: 4.0
-Requires PHP: 5.3
-Tested up to: 6.8
+Requires PHP: 5.0
+Tested up to: 6.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: elegant-magazine
@@ -1216,11 +1216,6 @@ a:hover, a:active {
     position: relative;
 }
 
-span.em-post-navigation {
-    display: block;
-    font-weight: bold;
-}
-
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -1264,6 +1259,11 @@ span.em-post-navigation {
     padding: 0 15px;
     text-transform: uppercase;
     vertical-align: middle;
+}
+
+span.em-post-navigation {
+    display: block;
+    font-weight: bold;
 }
 
 .comment-navigation .nav-next,
