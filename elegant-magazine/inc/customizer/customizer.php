@@ -87,7 +87,7 @@ function elegant_magazine_customize_register($wp_customize)
 
     $wp_customize->add_control('disable_header_image_tint_overlay',
         array(
-            'label' => esc_html__('Disable Image Tint/Overlay', 'elegant-magazine'),
+            'label' => __('Disable Image Tint/Overlay', 'elegant-magazine'),
             'section' => 'header_image',
             'type' => 'checkbox',
             'priority' => 50,
@@ -107,8 +107,8 @@ function elegant_magazine_customize_register($wp_customize)
             $wp_customize,
             'theme_upsell',
             array(
-                'title' => esc_html__('Elegant Magazine Pro', 'elegant-magazine'),
-                'pro_text' => esc_html__('Upgrade now', 'elegant-magazine'),
+                'title' => __('Elegant Magazine Pro', 'elegant-magazine'),
+                'pro_text' => __('Upgrade now', 'elegant-magazine'),
                 'pro_url' => 'https://www.afthemes.com/products/elegant-magazine-pro/',
                 'priority' => 1,
             )

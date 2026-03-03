@@ -73,6 +73,13 @@
         }
       },
     }),
+    (n.RtlCheck = function () {
+      if (e('body').hasClass('rtl')) {
+        return true;
+      } else {
+        return false;
+      }
+    }),
     (n.DataBackground = function () {
       var pageSection = e('.data-bg');
       pageSection.each(function (indx) {
@@ -114,6 +121,7 @@
         autoplay: true,
         autoplaySpeed: 8000,
         infinite: true,
+        rtl: n.RtlCheck(),
         nextArrow:
           '<span class="slide-icon slide-next icon-right fa fa-arrow-right"></span>',
         prevArrow:
@@ -127,6 +135,7 @@
         autoplay: true,
         autoplaySpeed: 7000,
         infinite: true,
+        rtl: n.RtlCheck(),
         nextArrow:
           '<i class="slide-icon slide-icon-1 slide-next slide-next-1 fa fa-arrow-right"></i>',
         prevArrow:
@@ -138,6 +147,7 @@
         slidesToScroll: 1,
         autoplay: true,
         infinite: true,
+        rtl: n.RtlCheck(),
         nextArrow:
           '<i class="slide-icon slide-icon-1 slide-next slide-next-1 fa fa-arrow-right"></i>',
         prevArrow:
@@ -169,6 +179,7 @@
         slidesToScroll: 1,
         autoplay: true,
         infinite: true,
+        rtl: n.RtlCheck(),
         nextArrow:
           '<i class="slide-icon slide-icon-1 slide-next slide-next-1 fa fa-arrow-right"></i>',
         prevArrow:
@@ -208,6 +219,7 @@
         autoplay: true,
         autoplaySpeed: 8000,
         infinite: true,
+        rtl: n.RtlCheck(),
         nextArrow:
           '<i class="slide-icon slide-icon-1 slide-next fa fa-arrow-right"></i>',
         prevArrow:

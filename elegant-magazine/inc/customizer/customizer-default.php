@@ -41,7 +41,7 @@ function elegant_magazine_get_default_theme_options() {
 
     // Frontpage Section.
     $defaults['show_ticker_news_section'] = 1;
-    $defaults['ticker_section_title'] = esc_html__('Exclusive', 'elegant-magazine');
+    $defaults['ticker_section_title'] = __('Exclusive', 'elegant-magazine');
     $defaults['select_ticker_news_category'] = 0;
     $defaults['ticker_news_count'] = 5;
 
@@ -78,7 +78,7 @@ function elegant_magazine_get_default_theme_options() {
 
     // Footer.
     $defaults['footer_show_latest_blog_carousel'] = 0;
-    $defaults['footer_copyright_text'] = esc_html__('Copyright &copy; All rights reserved.', 'elegant-magazine');
+    $defaults['footer_copyright_text'] = __('Copyright &copy; All rights reserved.', 'elegant-magazine');
 
     // Pass through filter.
     $defaults = apply_filters('elegant_magazine_filter_default_theme_options', $defaults);

@@ -16,7 +16,7 @@ require get_template_directory().'/inc/customizer/font-color-options.php';
 // Add Theme Options Panel.
 $wp_customize->add_panel('theme_option_panel',
 	array(
-		'title'      => esc_html__('Theme Options', 'elegant-magazine'),
+		'title'      => __('Theme Options', 'elegant-magazine'),
 		'priority'   => 200,
 		'capability' => 'edit_theme_options',
 	)
@@ -25,7 +25,7 @@ $wp_customize->add_panel('theme_option_panel',
 // Preloader Section.
 $wp_customize->add_section('site_preloader_settings',
     array(
-        'title'      => esc_html__('Preloader', 'elegant-magazine'),
+        'title'      => __('Preloader', 'elegant-magazine'),
         'priority'   => 50,
         'capability' => 'edit_theme_options',
         'panel'      => 'theme_option_panel',
@@ -43,7 +43,7 @@ $wp_customize->add_setting('enable_site_preloader',
 
 $wp_customize->add_control('enable_site_preloader',
     array(
-        'label'    => esc_html__('Enable preloader', 'elegant-magazine'),
+        'label'    => __('Enable preloader', 'elegant-magazine'),
         'section'  => 'site_preloader_settings',
         'type'     => 'checkbox',
         'priority' => 10,
@@ -60,7 +60,7 @@ $wp_customize->add_control('enable_site_preloader',
 // Frontpage Section.
 $wp_customize->add_section('header_options_settings',
 	array(
-		'title'      => esc_html__('Header', 'elegant-magazine'),
+		'title'      => __('Header', 'elegant-magazine'),
 		'priority'   => 50,
 		'capability' => 'edit_theme_options',
 		'panel'      => 'theme_option_panel',
@@ -79,7 +79,7 @@ $wp_customize->add_setting('top_header_transparency',
 );
 $wp_customize->add_control('top_header_transparency',
     array(
-        'label'    => esc_html__('Transparent top header', 'elegant-magazine'),
+        'label'    => __('Transparent top header', 'elegant-magazine'),
         'section'  => 'header_options_settings',
         'type'     => 'checkbox',
         'priority' => 10,
@@ -100,7 +100,7 @@ $wp_customize->add_setting('show_date_section',
 );
 $wp_customize->add_control('show_date_section',
     array(
-        'label'    => esc_html__('Show date on top header', 'elegant-magazine'),
+        'label'    => __('Show date on top header', 'elegant-magazine'),
         'section'  => 'header_options_settings',
         'type'     => 'checkbox',
         'priority' => 10,
@@ -121,7 +121,7 @@ $wp_customize->add_setting('show_social_menu_section',
 
 $wp_customize->add_control('show_social_menu_section',
     array(
-        'label'    => esc_html__('Show social menu on top header', 'elegant-magazine'),
+        'label'    => __('Show social menu on top header', 'elegant-magazine'),
         'section'  => 'header_options_settings',
         'type'     => 'checkbox',
         'priority' => 11,
@@ -133,7 +133,7 @@ $wp_customize->add_control('show_social_menu_section',
 // Breadcrumb Section.
 $wp_customize->add_section('site_breadcrumb_settings',
     array(
-        'title'      => esc_html__('Breadcrumb', 'elegant-magazine'),
+        'title'      => __('Breadcrumb', 'elegant-magazine'),
         'priority'   => 50,
         'capability' => 'edit_theme_options',
         'panel'      => 'theme_option_panel',
@@ -151,7 +151,7 @@ $wp_customize->add_setting('enable_breadcrumb',
 
 $wp_customize->add_control('enable_breadcrumb',
     array(
-        'label'    => esc_html__('Show breadcrumbs', 'elegant-magazine'),
+        'label'    => __('Show breadcrumbs', 'elegant-magazine'),
         'section'  => 'site_breadcrumb_settings',
         'type'     => 'checkbox',
         'priority' => 10,
@@ -169,7 +169,7 @@ $wp_customize->add_control('enable_breadcrumb',
 // Layout Section.
 $wp_customize->add_section('site_layout_settings',
     array(
-        'title'      => esc_html__('Layout', 'elegant-magazine'),
+        'title'      => __('Layout', 'elegant-magazine'),
         'priority'   => 50,
         'capability' => 'edit_theme_options',
         'panel'      => 'theme_option_panel',
@@ -187,14 +187,14 @@ $wp_customize->add_setting('global_content_alignment',
 
 $wp_customize->add_control( 'global_content_alignment',
     array(
-        'label'       => esc_html__('Content alignment', 'elegant-magazine'),
-        'description' => esc_html__('Select global content alignment', 'elegant-magazine'),
+        'label'       => __('Content alignment', 'elegant-magazine'),
+        'description' => __('Select global content alignment', 'elegant-magazine'),
         'section'     => 'site_layout_settings',
         'type'        => 'select',
         'choices'               => array(
-            'align-content-left' => esc_html__( 'Content - Primary sidebar', 'elegant-magazine' ),
-            'align-content-right' => esc_html__( 'Primary sidebar - Content', 'elegant-magazine' ),
-            'full-width-content' => esc_html__( 'Full width content', 'elegant-magazine' )
+            'align-content-left' => __( 'Content - Primary sidebar', 'elegant-magazine' ),
+            'align-content-right' => __( 'Primary sidebar - Content', 'elegant-magazine' ),
+            'full-width-content' => __( 'Full width content', 'elegant-magazine' )
         ),
         'priority'    => 130,
     ));
@@ -227,12 +227,12 @@ array(
 
 $wp_customize->add_control( 'global_toggle_image_lazy_load_setting',
 array(
-    'label'       => esc_html__('Image Lazy Loading', 'elegant-magazine'),
+    'label'       => __('Image Lazy Loading', 'elegant-magazine'),
     'section'     => 'site_layout_settings',
     'type'        => 'select',
     'choices'               => array(
-        'enable' => esc_html__( 'Enable ', 'elegant-magazine' ),
-        'disable' => esc_html__( 'Disable', 'elegant-magazine' ),
+        'enable' => __( 'Enable ', 'elegant-magazine' ),
+        'disable' => __( 'Disable', 'elegant-magazine' ),
 
     ),
     'priority'    => 130,
@@ -247,7 +247,7 @@ array(
 // Archive Section.
 $wp_customize->add_section('site_archive_settings',
     array(
-        'title'      => esc_html__('Archive', 'elegant-magazine'),
+        'title'      => __('Archive', 'elegant-magazine'),
         'priority'   => 50,
         'capability' => 'edit_theme_options',
         'panel'      => 'theme_option_panel',
@@ -265,13 +265,13 @@ $wp_customize->add_setting('archive_layout',
 
 $wp_customize->add_control( 'archive_layout',
     array(
-        'label'       => esc_html__('Archive layout', 'elegant-magazine'),
-        'description' => esc_html__('Select layout for archive', 'elegant-magazine'),
+        'label'       => __('Archive layout', 'elegant-magazine'),
+        'description' => __('Select layout for archive', 'elegant-magazine'),
         'section'     => 'site_archive_settings',
         'type'        => 'select',
         'choices'               => array(
-            'archive-layout-full' => esc_html__( 'Full', 'elegant-magazine' ),
-            'archive-layout-list' => esc_html__( 'List', 'elegant-magazine' ),
+            'archive-layout-full' => __( 'Full', 'elegant-magazine' ),
+            'archive-layout-list' => __( 'List', 'elegant-magazine' ),
 
         ),
         'priority'    => 130,
@@ -288,13 +288,13 @@ $wp_customize->add_setting('archive_image_alignment',
 
 $wp_customize->add_control( 'archive_image_alignment',
     array(
-        'label'       => esc_html__('Image alignment', 'elegant-magazine'),
-        'description' => esc_html__('Select image alignment for archive', 'elegant-magazine'),
+        'label'       => __('Image alignment', 'elegant-magazine'),
+        'description' => __('Select image alignment for archive', 'elegant-magazine'),
         'section'     => 'site_archive_settings',
         'type'        => 'select',
         'choices'               => array(
-            'archive-image-left' => esc_html__( 'Left', 'elegant-magazine' ),
-            'archive-image-right' => esc_html__( 'Right', 'elegant-magazine' )
+            'archive-image-left' => __( 'Left', 'elegant-magazine' ),
+            'archive-image-right' => __( 'Right', 'elegant-magazine' )
         ),
         'priority'    => 130,
         'active_callback' => 'elegant_magazine_archive_image_status'
@@ -311,13 +311,13 @@ $wp_customize->add_setting('archive_content_view',
 
 $wp_customize->add_control( 'archive_content_view',
     array(
-        'label'       => esc_html__('Content view', 'elegant-magazine'),
-        'description' => esc_html__('Select content view for archive', 'elegant-magazine'),
+        'label'       => __('Content view', 'elegant-magazine'),
+        'description' => __('Select content view for archive', 'elegant-magazine'),
         'section'     => 'site_archive_settings',
         'type'        => 'select',
         'choices'               => array(
-            'archive-content-excerpt' => esc_html__( 'Post excerpt', 'elegant-magazine' ),
-            'archive-content-full' => esc_html__( 'Full Content', 'elegant-magazine' )
+            'archive-content-excerpt' => __( 'Post excerpt', 'elegant-magazine' ),
+            'archive-content-full' => __( 'Full Content', 'elegant-magazine' )
 
         ),
         'priority'    => 130,
@@ -329,7 +329,7 @@ $wp_customize->add_control( 'archive_content_view',
 // Single Section.
 $wp_customize->add_section('site_single_related_posts_settings',
     array(
-        'title'      => esc_html__('Related Posts', 'elegant-magazine'),
+        'title'      => __('Related Posts', 'elegant-magazine'),
         'priority'   => 50,
         'capability' => 'edit_theme_options',
         'panel'      => 'theme_option_panel',
@@ -379,7 +379,7 @@ $wp_customize->add_control( 'single_related_posts_title',
 // Footer Section.
 $wp_customize->add_section('site_footer_latest_blog_settings',
     array(
-        'title'      => esc_html__('Latest blog carousel', 'elegant-magazine'),
+        'title'      => __('Latest blog carousel', 'elegant-magazine'),
         'priority'   => 50,
         'capability' => 'edit_theme_options',
         'panel'      => 'theme_option_panel',
@@ -407,7 +407,7 @@ $wp_customize->add_control( 'footer_show_latest_blog_carousel',
 // Footer Section.
 $wp_customize->add_section('site_footer_settings',
     array(
-        'title'      => esc_html__('Footer', 'elegant-magazine'),
+        'title'      => __('Footer', 'elegant-magazine'),
         'priority'   => 50,
         'capability' => 'edit_theme_options',
         'panel'      => 'theme_option_panel',

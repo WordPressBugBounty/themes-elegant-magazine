@@ -23,7 +23,7 @@ $wp_customize->add_control(
         $wp_customize,
         'top_header_background_color',
         array(
-            'label'      => esc_html__( 'Top header background color', 'elegant-magazine' ),
+            'label'      => __( 'Top header background color', 'elegant-magazine' ),
             'section'    => 'colors',
             'settings'   => 'top_header_background_color',
             'priority' => 9,
@@ -46,7 +46,7 @@ $wp_customize->add_control(
         $wp_customize,
         'top_header_text_color',
         array(
-            'label'      => esc_html__( 'Top header texts color', 'elegant-magazine' ),
+            'label'      => __( 'Top header texts color', 'elegant-magazine' ),
             'section'    => 'colors',
             'settings'   => 'top_header_text_color',
             'priority' => 9,
