@@ -33,6 +33,13 @@
                 "spacing": {
                     "blockGap": "0.5em"
                 }
+            },
+            "core/post-terms": {
+                "typography": {
+                    "fontSize": "0.75rem",                    
+                    "fontWeight": "700",
+                    "letterSpacing": "0.05em"
+                }
             }
         },
         "elements": {
