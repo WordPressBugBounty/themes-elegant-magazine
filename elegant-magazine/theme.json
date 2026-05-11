@@ -55,6 +55,21 @@
                         "typography": { "fontSize": "0.8rem", "fontStyle": "italic" }
                     }
                 }
+            },
+            "core/pullquote": {
+                "border": {
+                    "top": { "width": "4px", "style": "solid", "color": "currentColor" },
+                    "bottom": { "width": "4px", "style": "solid", "color": "currentColor" }
+                },
+                "typography": {
+                    "fontSize": "1.5rem",
+                    "lineHeight": "1.2",
+                    "fontStyle": "italic"
+                },
+                "spacing": {
+                    "margin": { "top": "2em", "bottom": "2em" },
+                    "padding": { "top": "1em", "bottom": "1em" }
+                }
             }
         },
         "elements": {
