@@ -38,11 +38,6 @@ if ( ! function_exists( 'elegant_magazine_recommended_plugins' ) ) :
                 'required' => false,
             ),
             array(
-                'name'     => esc_html__( 'AF Companion', 'elegant-magazine' ),
-                'slug'     => 'af-companion',
-                'required' => false,
-            ),
-            array(
                 'name'     => esc_html__( 'Free Live Chat using 3CX', 'elegant-magazine' ),
                 'slug'     => 'wp-live-chat-support',
                 'required' => false,
