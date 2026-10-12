@@ -25,6 +25,13 @@
         },
         "shadow": {
             "defaultPresets": true
+        },
+        "custom": {
+            "lineHeight": {
+                "flat": "1",
+                "tight": "1.2",
+                "normal": "1.5"
+            }
         }
     },
     "styles": {
