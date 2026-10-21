@@ -32,6 +32,10 @@
                 "tight": "1.2",
                 "normal": "1.5"
             }
+        },
+        "background": {
+            "backgroundImage": true,
+            "backgroundSize": true
         }
     },
     "styles": {
