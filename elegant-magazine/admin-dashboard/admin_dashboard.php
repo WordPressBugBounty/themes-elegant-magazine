@@ -276,7 +276,7 @@ if (!class_exists('AF_themes_info')) {
       if (($elegant_magazine_blockspare_installed && $elegant_magazine_blockspare_active) && $plugin_update == 'false') {
 
       ?>
-        <div id="bs-dashboard"></div>
+        <div id="bs-starter-sites"></div>
 
 
       <?php
