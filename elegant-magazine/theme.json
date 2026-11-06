@@ -15,7 +15,19 @@
         },
         "typography": {
             "fluid": true,
-            "writingMode": true
+            "writingMode": true,
+            "fontStyle": true,
+            "fontWeight": true,
+            "fontSize": true,
+            "letterSpacing": true,
+            "lineHeight": true,
+            "textAlign": true,
+            "textDecoration": true,
+            "textTransform": true,
+            "textIndent": true,
+            "dropCap": true,
+            "textColumns": true,
+            "textShadow": true
         },
         "border": {
             "color": true,
